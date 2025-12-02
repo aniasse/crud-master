@@ -102,17 +102,11 @@ Les variables suivantes doivent tre dfinies dans le fichier `.env`.
 
 Tous les tests doivent tre kuts contre lAPI Gateway fonctionnant sur `http://localhost:8080`.
 
-### Postman / OpenAPI
-
-Vous pouvez importer le fichier `openapi.yaml` inclus dans ce projet directement dans Postman ou tout autre client API prenant en charge les spcifications OpenAPI 3.0. Cela gnra automatiquement une collection de toutes les requates disponibles.
-
--   Dans Postman : `Fichier > Importer > Tlcharger openapi.yaml`
-
 ### Exemples `curl` manuels
 
 **Service dInventaire (`/api/movies`)**
 
-1.  **Cr er un film**
+1.  **Creer un film**
     ```sh
     curl -X POST http://localhost:8080/api/movies \
          -H "Content-Type: application/json" \
